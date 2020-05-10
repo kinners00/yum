@@ -1,5 +1,5 @@
 {
-  "description": "Update security packages via YUM",
+  "description": "Update security packages via Yum",
   "input_method": "environment",
   "parameters": {
     "cache": {
