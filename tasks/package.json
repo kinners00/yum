@@ -1,0 +1,19 @@
+{
+    "description": "Interact with packages via Yum",
+    "input_method": "environment",
+    "parameters": {
+      "cache": {
+      "description": "'clean' or 'update'",
+      "type": "Optional[String[1]]"
+          },
+      "action": {
+      "description": "Package action",
+      "type": "Enum[install, remove, update]"
+          },
+      "package": {
+        "description": "Name of package",
+        "type": "String[1]"
+      }
+    }
+  }
+  

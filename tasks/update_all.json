@@ -1,0 +1,7 @@
+{
+    "description": "This will updates ALL packages on your system",
+    "input_method": "environment",
+    "parameters": {
+      
+      }
+    }
