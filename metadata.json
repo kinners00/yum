@@ -1,8 +1,8 @@
 {
   "name": "kinners00-yum",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "author": "Marc McKinley",
-  "summary": "This module contains ad-hoc tasks to help out with applying security patches on CentOS/RHEL using Yum.",
+  "summary": "Ad-hoc tasks to interact with yum to apply security patches, install packages etc",
   "license": "Apache-2.0",
   "source": "https://github.com/kinners00/yum",
   "project_page": "https://github.com/kinners00/yum",
