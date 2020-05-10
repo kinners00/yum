@@ -9,11 +9,9 @@ updateall='*******Attempting to update all packages*******'
 if [[ "$PT_cache" == "update" ]]; then
     echo -e "\n$updatecache\n"
     /usr/bin/yum clean expire-cache
-    echo ""
 elif [[ "$PT_cache" == "clean" ]]; then
     echo -e "\n$cleancache\n"
     /usr/bin/yum clean all
-    echo ""
     fi
 
 #Updates all packages

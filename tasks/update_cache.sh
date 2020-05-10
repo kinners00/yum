@@ -1,8 +1,8 @@
 #!/bin/bash
 
 #Variables containing output messages
-updatecache='*******Updating Cache*******'
 cleancache='*******Cleaning Cache*******'
+updatecache='*******Updating Cache*******'
 
 
 #Checking cache input to determine which type of cache action to perform

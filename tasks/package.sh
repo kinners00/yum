@@ -1,12 +1,12 @@
 #!/bin/bash
 
 #Variables containing output messages
-
-install='*******Attempting to install package*******'
-remove='*******Attempting to remove package*******'
-update='*******Attempting to update package*******'
-updatecache='*******Updating Cache*******'
 cleancache='*******Cleaning Cache*******'
+updatecache='*******Updating Cache*******'
+install='*******Attempting to install package*******'
+update='*******Attempting to update package*******'
+remove='*******Attempting to remove package*******'
+
 
 
 #Checking cache input to determine which type of cache action to perform
@@ -14,11 +14,9 @@ cleancache='*******Cleaning Cache*******'
 if [[ "$PT_cache" == "update" ]]; then
     echo -e "\n$updatecache\n"
     /usr/bin/yum clean expire-cache
-    echo ""
 elif [[ "$PT_cache" == "clean" ]]; then
     echo -e "\n$cleancache\n"
     /usr/bin/yum clean all
-    echo ""
     fi
 
 #Checking action & package input to determine requested action and package
