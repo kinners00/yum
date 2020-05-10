@@ -1,0 +1,10 @@
+{
+    "description": "Updates cache",
+    "input_method": "environment",
+    "parameters": {
+      "cache": {
+          "description": "Update (expire-cache) Clean (clean all)",
+          "type": "Enum[update, clean]"
+        }
+    }
+  }
