@@ -44,5 +44,8 @@
     "package",
     "vulernability",
     "cve"
-  ]
+  ],
+  "pdk-version": "1.17.0",
+  "template-url": "pdk-default#1.17.0",
+  "template-ref": "tags/1.17.0-0-gd3a4319"
 }
