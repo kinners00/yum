@@ -3,20 +3,12 @@
   "input_method": "environment",
   "parameters": {
     "cache": {
-        "description": "'clean' or 'update' cache",
+        "description": "Available Params: [update, clean]",
         "type": "Optional[String[1]]"
       },
-    "securitytype": {
-      "description": "'full' or 'minimal' security update",
-      "type": "Optional[String[1]]"
-    },
-    "cve": {
-        "description": "format should contain cve & article number ex. CVE-2020-11651",
-        "type": "Optional[String[1]]"
-      },
-      "advisory": {
-        "description": "format should contain RHSA prefix & article number ex. RHSA-2020:2040",
-        "type": "Optional[String[1]]"
-      }
+    "security": {
+      "description": "Available Params: minimal, full",
+      "type": "String[1]"
+    }
   }
 }

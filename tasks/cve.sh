@@ -1,10 +1,9 @@
 #!/bin/bash
 
 #Variables containing output messages
-full='*******Full security update running*******'
-minimal='*******Minimal security update running*******'
 updatecache='*******Updating Cache*******'
 cleancache='*******Cleaning Cache*******'
+cve='*******Attempting to install requested CVE remediation*******'
 
 
 #Checking cache input to determine which type of cache action to perform
@@ -19,14 +18,10 @@ elif [[ "$PT_cache" == "clean" ]]; then
     echo ""
     fi
 
-#Checking securitytype input to determine which type of security update to run
-#security: [minimal, full]
-if [[ "$PT_security" == "full" ]]; then
-    echo -e "$full\n"
-    /usr/bin/yum update -y --security
-    echo ""
-elif [[ "$PT_security" == "minimal" ]]; then 
-    echo -e "$minimal\n"
-    /usr/bin/yum update-minimal -y --security
+#Checking cve input to determine which cve remediation should be applied
+#cve: <cve>
+if [[ $PT_cve ]]; then
+    echo -e "$cve\n"
+    /usr/bin/yum update -y --cve $PT_cve
     echo ""
     fi

@@ -3,7 +3,7 @@
     "input_method": "environment",
     "parameters": {
       "cache": {
-      "description": "'clean' or 'update'",
+      "description": "Available Params: [update, clean]",
       "type": "Optional[String[1]]"
           },
       "action": {
@@ -11,7 +11,7 @@
       "type": "Enum[install, remove, update]"
           },
       "package": {
-        "description": "Name of package",
+        "description": "Available Params: <package>",
         "type": "String[1]"
       }
     }

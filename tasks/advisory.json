@@ -1,0 +1,14 @@
+{
+    "description": "Update packages relating to a specific Redhat security advisory",
+    "input_method": "environment",
+    "parameters": {
+      "cache": {
+          "description": "Available Params: [update, clean]",
+          "type": "Optional[String[1]]"
+        },
+      "advisory": {
+          "description": "Available Params: <advisory> ex. RHSA-2020:2040",
+           "type": "String[1]"
+      }
+    }
+  }

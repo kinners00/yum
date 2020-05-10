@@ -1,0 +1,14 @@
+{
+    "description": "Update packages relating to a specific CVE",
+    "input_method": "environment",
+    "parameters": {
+      "cache": {
+          "description": "Available Params: [update, clean]",
+          "type": "Optional[String[1]]"
+        },
+      "cve": {
+          "description": "Available Params: <CVE> ex. CVE-2020-11651",
+          "type": "String[1]"
+        }
+    }
+  }

@@ -1,29 +1,30 @@
 {
   "name": "kinners00-yum",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "Marc McKinley",
   "summary": "This module contains ad-hoc tasks to help out with applying security patches on CentOS/RHEL using Yum.",
   "license": "Apache-2.0",
   "source": "https://github.com/kinners00/yum",
+  "project_page": "https://github.com/kinners00/yum",
+  "issues_url": "https://github.com/kinners00/yum/issues",
   "dependencies": [
 
   ],
   "operatingsystem_support": [
     {
-      "operatingsystem": "CentOS",
-      "operatingsystemrelease": [
-        "6",
-        "7",
-        "8"
-      ]
+      "operatingsystem": "CentOS"
     },
     {
-      "operatingsystem": "RedHat",
-      "operatingsystemrelease": [
-        "6",
-        "7",
-        "8"
-      ]
+      "operatingsystem": "RedHat"
+    },
+    {
+      "operatingsystem": "Fedora"
+    },
+    {
+      "operatingsystem": "SUSE"
+    },
+    {
+      "operatingsystem": "RedHat"
     }
   ],
   "requirements": [
@@ -32,7 +33,13 @@
       "version_requirement": ">= 2.8.0"
     }
   ],
-  "pdk-version": "1.17.0",
-  "template-url": "pdk-default#1.17.0",
-  "template-ref": "tags/1.17.0-0-gd3a4319"
+  "tags": [
+    "yum",
+    "security",
+    "tasks",
+    "bolt",
+    "package",
+    "vulernability",
+    "cve"
+  ]
 }
