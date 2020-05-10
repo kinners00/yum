@@ -7,7 +7,7 @@
         "type": "Optional[String[1]]"
       },
     "security": {
-      "description": "Available Params: minimal, full",
+      "description": "Minimal or full/regular security update",
       "type": "Enum[minimal, full]"
     }
   }

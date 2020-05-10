@@ -1,5 +1,5 @@
 {
-    "description": "This will updates ALL packages on your system",
+    "description": "This will update ALL packages on your system",
     "input_method": "environment",
     "parameters": {
       "cache": {
