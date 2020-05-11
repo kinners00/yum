@@ -46,7 +46,7 @@ bolt puppetfile install
 Add this line to your Puppetfile.
 <pre>
 mod 'kinners00-yum', 	    '0.4.2'
-<pre>
+</pre>
 # Usage
 
 ## Show all available yum tasks
