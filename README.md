@@ -9,7 +9,9 @@ The security, cve and advisory tasks will only work if you have the relevant sec
 It will *look* like it works on centos etc (i.e. executes successfully) but it will never "find" any security updates if the corresponding repo isn't there.
 
 
-### If you've never used bolt before...
+## If you've never used bolt before
+
+Check these out:
 
 [Installing Bolt](https://puppet.com/docs/bolt/latest/bolt_installing.html)
 
