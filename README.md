@@ -1,6 +1,18 @@
 # yum
 
+#### Table of Contents
+
+1. [Description](#description)
+2. [New to bolt?](#new-to-bolt)
+    * [Newcomers quickstart](#newcomers-quickstart)
+3. [Gotchas/Limitations](#gotchas)
+4. [Usage - Examples and general tips on how to use the content in this module](#usage)
+5. [# Contributions - Guide for contributing to the module](#contributions)
+
+# Description
+
 These tasks help interact with yum at various levels via Puppet Bolt or Puppet Enterprise tasks. 
+
 
 # New to bolt?
 
@@ -32,12 +44,6 @@ EOF
 
 bolt puppetfile install
 ```
-
-# Bolt/Puppeteers quickstart
-
-Add this line to your Puppetfile.
-
-``` mod 'kinners00-yum', 	    '0.4.4' ```
 
 # Gotchas
 
@@ -96,13 +102,13 @@ Add `--verbose` to the end of your bolt command to get output from each task in 
 bolt plan run yum::security_cache targets=rhelboxes cache=update security=minimal
 ```
 
-# Contributions/Feedback
+# Contributions
 
-This module contains a simple set of tasks (written in bash) that I created over the space of a day - Nothing crazy. The logic on some tasks could be smarter/cleaner but they should all work. I will get round to improving them at some point in the near future. 
-
-If you're experiencing any bugs, please raise an issue below. 
+This module contains a simple set of tasks (written in bash). The logic on some tasks could be smarter/cleaner but they should all work. I will get round to improving them at some point in the near future.  
 
 If anyone would like to contribute to the module, that would be awesome and very much welcomed.
+
+If you're experiencing any bugs, please raise an issue below:
 
 Repo:        https://github.com/kinners00/yum/issues
 
