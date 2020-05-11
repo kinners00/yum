@@ -8,4 +8,3 @@ advisory='*******Attempting to install requested advisory remediation*******'
 echo -e "\n$advisory\n"
 /usr/bin/yum update -y --advisory $PT_advisory
 echo ""
-fi

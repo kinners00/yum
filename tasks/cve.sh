@@ -8,4 +8,3 @@ cve='*******Attempting to install requested CVE remediation*******'
 echo -e "\n$cve\n"
 /usr/bin/yum update -y --cve $PT_cve
 echo ""
-fi
