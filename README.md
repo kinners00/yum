@@ -1,13 +1,6 @@
 # yum
 
-These tasks help interact with yum at various levels via Puppet Bolt or Puppet Enterprise tasks.
-
-# Gotchas
-
-The security, cve and advisory tasks will only work if you have the relevant security metadata repos enabled. To the best of my knowledge, this effectively limits this task to RHEL and OEL boxes.
-
-It will *look* like it works on centos etc (i.e. executes successfully) but it will never "find" any security updates if the corresponding repo isn't there.
-
+These tasks help interact with yum at various levels via Puppet Bolt or Puppet Enterprise tasks. 
 
 # New to bolt?
 
@@ -34,7 +27,7 @@ cd Boltdir
 
 cat << EOF >> Puppetfile
 # Modules from the Puppet Forge.
-mod 'kinners00-yum', 	    '0.4.3'
+mod 'kinners00-yum', 	    '0.4.4'
 EOF
 
 bolt puppetfile install
@@ -44,7 +37,13 @@ bolt puppetfile install
 
 Add this line to your Puppetfile.
 
-``` mod 'kinners00-yum', 	    '0.4.3' ```
+``` mod 'kinners00-yum', 	    '0.4.4' ```
+
+# Gotchas
+
+The security, cve and advisory tasks will only work if you have the relevant security metadata repos enabled. To the best of my knowledge, this effectively limits this task to RHEL and OEL boxes.
+
+It will *look* like it works on centos etc (i.e. executes successfully) but it will never "find" any security updates if the corresponding repo isn't there.
 
 # Usage
 
@@ -68,7 +67,7 @@ bolt task show yum::security
 Pass in the relevant parameters and run the task.
 
 ``` shell
-bolt task run --targets <node-name> yum::security security=<value>
+bolt task run --targets rhelboxes yum::security security=minimal
 ```
 ## Plan example
 
@@ -94,7 +93,7 @@ plan yum::security_cache(
 Add `--verbose` to the end of your bolt command to get output from each task in the plan.
 
 ``` shell
-bolt plan run yum::security_cache targets=<value> cache=<value> security=<value>
+bolt plan run yum::security_cache targets=rhelboxes cache=update security=minimal
 ```
 
 # Contributions/Feedback

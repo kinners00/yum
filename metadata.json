@@ -1,6 +1,6 @@
 {
   "name": "kinners00-yum",
-  "version": "0.4.3",
+  "version": "0.4.4",
   "author": "Marc McKinley",
   "summary": "Ad-hoc tasks to interact with yum to apply security patches, install packages etc",
   "license": "Apache-2.0",
@@ -39,7 +39,7 @@
     "tasks",
     "bolt",
     "package",
-    "vulernability",
+    "vulnerability",
     "cve"
   ],
   "pdk-version": "1.17.0",
