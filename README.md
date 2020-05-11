@@ -42,7 +42,8 @@ bolt puppetfile install
 
 ## Bolt/Puppeteers quickstart
 
-Add this line to your Puppetfile
+Add this line to your Puppetfile.
+
 `mod 'kinners00-yum', 	    '0.4.0'`
 
 ## Usage
