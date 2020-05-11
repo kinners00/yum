@@ -67,6 +67,8 @@ bolt task show yum::security
 ```
 ## Running a task
 
+Pass in the relevant parameters and run the task.
+
 ``` shell
 bolt task run --targets <node-name> yum::security security=<value>
 ```
