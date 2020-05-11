@@ -2,10 +2,6 @@
   "description": "Update security packages via Yum",
   "input_method": "environment",
   "parameters": {
-    "cache": {
-        "description": "Available Params: [update, clean]",
-        "type": "Optional[String[1]]"
-      },
     "security": {
       "description": "Minimal or full/regular security update",
       "type": "Enum[minimal, full]"

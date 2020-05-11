@@ -1,0 +1,10 @@
+{
+    "description": "Removes packages via Yum",
+    "input_method": "environment",
+    "parameters": {
+      "package": {
+        "description": "Available Params: <package>",
+        "type": "String[1]"
+      }
+    }
+  }
