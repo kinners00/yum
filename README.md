@@ -64,7 +64,23 @@ bolt task run --targets <node-name> yum::security security=<value>
 ```
 ### Running a plan
 
-I've included a sample plan to demonstrate how you can chain together tasks to achieve an overall workflow. In this plan we are running the cache task followed by the security task. These can include tasks from other modules. Add `--verbose` to the end of your bolt command to get output from each task in the plan.
+I've included a sample plan to demonstrate how you can chain together tasks to achieve an overall workflow. In this plan we are running the cache task followed by the security task. These can include tasks from other modules. 
+
+``` puppet
+plan yum::security_cache(
+  TargetSpec $targets,
+  String $cache,
+  String $security
+) {
+
+  # Cache and security update 
+  run_task('yum::update_cache', $targets, cache => $cache)
+  run_task('yum::security', $targets, security => $security)
+
+  }
+```
+
+Add `--verbose` to the end of your bolt command to get output from each task in the plan.
 
 ``` shell
 bolt plan run yum::security_cache targets=<value> cache=<value> security=<value>
