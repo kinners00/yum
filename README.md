@@ -79,7 +79,7 @@ bolt task run --targets rhelboxes yum::security security=minimal
 
 **If you a bolt aficionado, you can ignore this section.**
 
-I've included a sample plan to demonstrate how you can chain together tasks to achieve an overall workflow. In this plan we are running the cache task followed by the security task. Tasks within plans can include tasks from other modules. 
+I've included a sample plan to demonstrate how you can chain together tasks to achieve an overall workflow. In this plan we are running the cache task followed by the security task. Plans can be made up of tasks from other modules too. 
 
 ``` puppet
 plan yum::security_cache(
