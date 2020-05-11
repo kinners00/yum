@@ -50,7 +50,7 @@ Add this line to your Puppetfile.
 
 # Usage
 
-### Show all available yum tasks
+## Show all available yum tasks
 
 Will show all tasks that match the module name `yum`.  
 
@@ -58,19 +58,19 @@ Will show all tasks that match the module name `yum`.
 bolt task show --filter yum
 ```
 
-### Show task metadata
+## Show task info/metadata
 
 This will show a brief description of the tasks function as well the parameters that the task can consume.
 
 ``` shell
 bolt task show yum::security
 ```
-### Running a task
+## Running a task
 
 ``` shell
 bolt task run --targets <node-name> yum::security security=<value>
 ```
-### Plan example
+## Plan example
 
 **If you a bolt aficionado, you can ignore this section.**
 
@@ -89,7 +89,7 @@ plan yum::security_cache(
 
   }
 ```
-### Running a plan
+## Running a plan
 
 Add `--verbose` to the end of your bolt command to get output from each task in the plan.
 
