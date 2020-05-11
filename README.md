@@ -8,16 +8,14 @@ The security, cve and advisory tasks will only work if you have the relevant sec
 
 It will *look* like it works on centos etc (i.e. executes successfully) but it will never "find" any security updates if the corresponding repo isn't there.
 
-## Contributions/Feedback
 
-This module contains a simple set of tasks (written in bash) that I created over the space of a day - Nothing crazy. The logic on some tasks could be smarter/cleaner but they should all work. I will get round to improving them at some point in the near future. 
+### If you've never used bolt before...
 
-If you're experiencing any bugs, please raise an issue below. 
+[Installing Bolt](https://puppet.com/docs/bolt/latest/bolt_installing.html)
 
-If anyone would like to contribute to the module, that would be awesome and very much welcomed.
+[Inventory File Examples](https://puppet.com/docs/bolt/latest/inventory_file_v2.html#inventory-file-examples)
 
-Repo:        https://github.com/kinners00/yum/issues
-Issues link: https://github.com/kinners00/yum/issues
+[Bolt Command reference](https://puppet.com/docs/bolt/latest/bolt_command_reference.html)
 
 
 ## Quick Start
@@ -29,6 +27,7 @@ Create a bolt project + Boltdir > create puppetfile + add this module > Install 
 mkdir bolt
 cd bolt
 mkdir Boltdir
+cd Boltdir
 
 cat << EOF >> Puppetfile
 # Modules from the Puppet Forge.
@@ -38,6 +37,7 @@ EOF
 bolt puppetfile install
 
 ```
+
 ## Usage
 
 ### Show all available yum tasks
@@ -67,3 +67,14 @@ I've included a sample plan to demonstrate how you can chain together tasks to a
 ``` shell
 bolt plan run yum::security_cache targets=<value> cache=<value> security=<value>
 ```
+
+## Contributions/Feedback
+
+This module contains a simple set of tasks (written in bash) that I created over the space of a day - Nothing crazy. The logic on some tasks could be smarter/cleaner but they should all work. I will get round to improving them at some point in the near future. 
+
+If you're experiencing any bugs, please raise an issue below. 
+
+If anyone would like to contribute to the module, that would be awesome and very much welcomed.
+
+Repo:        https://github.com/kinners00/yum/issues
+Issues link: https://github.com/kinners00/yum/issues
