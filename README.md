@@ -27,7 +27,6 @@ Check these out:
 Create a Bolt project + Boltdir > Create Puppetfile + Add this module > Install module > Run tasks! :)
 
 ``` shell
-
 mkdir bolt
 cd bolt
 mkdir Boltdir
@@ -35,7 +34,7 @@ cd Boltdir
 
 cat << EOF >> Puppetfile
 # Modules from the Puppet Forge.
-mod 'kinners00-yum', 	    '0.4.2'
+mod 'kinners00-yum', 	    '0.4.3'
 EOF
 
 bolt puppetfile install
@@ -44,9 +43,9 @@ bolt puppetfile install
 # Bolt/Puppeteers quickstart
 
 Add this line to your Puppetfile.
-<pre>
-mod 'kinners00-yum', 	    '0.4.2'
-</pre>
+
+``` mod 'kinners00-yum', 	    '0.4.3' ```
+
 # Usage
 
 ## Show all available yum tasks
