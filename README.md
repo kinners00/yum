@@ -20,7 +20,7 @@ Check these out:
 [Bolt Command reference](https://puppet.com/docs/bolt/latest/bolt_command_reference.html)
 
 
-## Quick Start
+## Newcomers quickstart
 
 Create a bolt project + Boltdir > create puppetfile + add this module > Install module > run tasks!
 
@@ -39,6 +39,11 @@ EOF
 bolt puppetfile install
 
 ```
+
+## Bolt/Puppeteers quickstart
+
+Add this line to your Puppetfile
+`mod 'kinners00-yum', 	    '0.4.0'`
 
 ## Usage
 
