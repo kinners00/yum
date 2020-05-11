@@ -4,7 +4,7 @@ These tasks help interact with yum at various levels via Puppet Bolt or Puppet E
 
 # Gotchas
 
-The security, cve and advisory tasks will only work if you have the relevant security metadata repos enabled. To the best of my knowledge, this limits this task to RHEL and OEL boxes.
+The security, cve and advisory tasks will only work if you have the relevant security metadata repos enabled. To the best of my knowledge, this effectively limits this task to RHEL and OEL boxes.
 
 It will *look* like it works on centos etc (i.e. executes successfully) but it will never "find" any security updates if the corresponding repo isn't there.
 
