@@ -45,7 +45,7 @@ bolt puppetfile install
 
 # Gotchas
 
-1. **You must pass 'run as root' param in order for tasks to successfully complete.** You can do this by specifying ```--run-as root``` on your bolt command or by adding ```run-as: root``` to your config in your inventory.yaml file. 
+1. **You must pass 'run as root' parameter in order for tasks to successfully complete.** You can do this by specifying ```--run-as root``` on your bolt command or by adding ```run-as: root``` to your config in your inventory.yaml file. 
 
 2. `yum::security`, `yum::cve` and `yum::advisory` tasks will only work if you have the relevant security metadata repos enabled. To the best of my knowledge, this effectively limits this task to RHEL and OEL boxes. It will *look* like it works on centos etc (i.e. executes successfully) but it will never "find" any security updates if the corresponding repo isn't there.
 
