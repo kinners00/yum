@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Variables containing output messages
-install='*******Attempting to install package*******'
+install='*******Attempting to install '$PT_package'*******'
 
 #Installs requested package 
 #package: <package>

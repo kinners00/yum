@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Variables containing output messages
-cve='*******Attempting to install requested CVE remediation*******'
+cve='*******Attempting to apply '$PT_cve' remediation*******'
 
 #Checking cve input to determine which cve remediation should be applied
 #cve: <cve>

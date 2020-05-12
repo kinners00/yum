@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Variables containing output messages
-advisory='*******Attempting to install requested advisory remediation*******'
+advisory='*******Attempting to apply '$PT_advisory' remediation*******'
 
 #Checking advisory input to determine which advisory remediation should be applied
 #advisory: <advisory>

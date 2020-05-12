@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Variables containing output messages
-remove='*******Attempting to remove package*******'
+remove='*******Attempting to remove '$PT_package'*******'
 
 #Removes requested package 
 #package: <package>

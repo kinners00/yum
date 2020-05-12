@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Variables containing output messages
-update='*******Attempting to update package*******'
+update='*******Attempting to update '$PT_package'*******'
 
 #Updates requested package 
 #package: <package>
