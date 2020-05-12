@@ -94,10 +94,10 @@ plan yum::security_cache(
 ```
 ## Running a plan
 
-Add `--verbose` to the end of your bolt command to get output from each task in the plan.
+(Optional) Add `--verbose` to the end of your bolt command to get output from each task in the plan.
 
 ``` shell
-bolt plan run yum::security_cache targets=rhelboxes cache=update security=minimal
+bolt plan run yum::security_cache targets=rhelboxes cache=update security=minimal --verbose
 ```
 
 # Contributions
