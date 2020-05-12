@@ -32,14 +32,12 @@ Check these out:
 Create a Bolt project + Boltdir > Create Puppetfile + Add this module > Install module > Run tasks! :)
 
 ``` shell
-mkdir bolt
-cd bolt
-mkdir Boltdir
-cd Boltdir
+mkdir -p bolt/Boltdir/
+cd bolt/Boltdir/
 
 cat << EOF >> Puppetfile
 # Modules from the Puppet Forge.
-mod 'kinners00-yum', 	    '0.4.4'
+mod 'kinners00-yum', 	    '0.4.5'
 EOF
 
 bolt puppetfile install
@@ -47,7 +45,7 @@ bolt puppetfile install
 
 # Gotchas
 
-The security, cve and advisory tasks will only work if you have the relevant security metadata repos enabled. To the best of my knowledge, this effectively limits this task to RHEL and OEL boxes.
+`yum::security`, `yum::cve` and `yum::advisory` tasks will only work if you have the relevant security metadata repos enabled. To the best of my knowledge, this effectively limits this task to RHEL and OEL boxes.
 
 It will *look* like it works on centos etc (i.e. executes successfully) but it will never "find" any security updates if the corresponding repo isn't there.
 

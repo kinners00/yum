@@ -1,8 +1,8 @@
 {
   "name": "kinners00-yum",
-  "version": "0.4.4",
+  "version": "0.4.5",
   "author": "Marc McKinley",
-  "summary": "Ad-hoc tasks to interact with yum to apply security patches, install packages etc",
+  "summary": "Ad-hoc tasks to interact with yum to install packages, apply security patches etc",
   "license": "Apache-2.0",
   "source": "https://github.com/kinners00/yum",
   "project_page": "https://github.com/kinners00/yum",
@@ -12,19 +12,16 @@
   ],
   "operatingsystem_support": [
     {
-      "operatingsystem": "CentOS"
+      "operatingsystem": "Oracle Enterprise Linux"
     },
     {
       "operatingsystem": "RedHat"
     },
     {
+      "operatingsystem": "CentOS"
+    },
+    {
       "operatingsystem": "Fedora"
-    },
-    {
-      "operatingsystem": "SUSE"
-    },
-    {
-      "operatingsystem": "Oracle Enterprise Linux"
     }
   ],
   "requirements": [
@@ -40,6 +37,9 @@
     "bolt",
     "package",
     "vulnerability",
+    "patch",
+    "patching",
+    "patches",
     "cve"
   ],
   "pdk-version": "1.17.0",
