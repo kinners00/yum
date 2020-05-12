@@ -40,7 +40,8 @@
     "patch",
     "patching",
     "patches",
-    "cve"
+    "cve",
+    "advisory"
   ],
   "pdk-version": "1.17.0",
   "template-url": "pdk-default#1.17.0",
