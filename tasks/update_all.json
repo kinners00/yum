@@ -1,10 +1,4 @@
 {
     "description": "This will update ALL packages on your system",
-    "input_method": "environment",
-    "parameters": {
-      "cache": {
-        "description": "Available Params: [update, clean]",
-        "type": "Optional[String[1]]"
-      }
-    }
+    "input_method": "environment"
   }
