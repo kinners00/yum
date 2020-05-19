@@ -37,7 +37,7 @@ cd bolt/Boltdir/
 
 cat << EOF >> Puppetfile
 # Modules from the Puppet Forge.
-mod 'kinners00-yum', 	    '0.5.2'
+mod 'kinners00-yum', 	    '0.5.3'
 EOF
 
 bolt puppetfile install
@@ -45,15 +45,15 @@ bolt puppetfile install
 
 # Gotchas
 
-1. **Bolt tasks are copied and executed under /tmp.**
+## Bolt tasks are copied and executed under /tmp 
 
 If you can't execute scripts under that directory, you can pass ```--tmpdir``` flag on your bolt command followed by your chosen directory for example ```--tmpdir /var/tmp```
 
-2. **You must pass 'run as root' parameter in order for tasks to successfully complete.**
+## You must pass 'run as root' parameter in order for tasks to successfully complete
 
 You can do this by specifying ```--run-as root``` on your bolt command or by adding ```run-as: root``` to your config in your inventory.yaml file. 
 
-3. **Security related tasks only work on RHEL + OEL.**
+## Security related tasks only work on RHEL + OEL 
 
 `yum::security`, `yum::cve` and `yum::advisory` tasks will only work if you have the relevant security metadata repos enabled. 
 
