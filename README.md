@@ -37,7 +37,7 @@ cd bolt/Boltdir/
 
 cat << EOF >> Puppetfile
 # Modules from the Puppet Forge.
-mod 'kinners00-yum', 	    '0.4.7'
+mod 'kinners00-yum', 	    '0.4.8'
 EOF
 
 bolt puppetfile install
@@ -45,9 +45,12 @@ bolt puppetfile install
 
 # Gotchas
 
-1. **You must pass 'run as root' parameter in order for tasks to successfully complete.** You can do this by specifying ```--run-as root``` on your bolt command or by adding ```run-as: root``` to your config in your inventory.yaml file. 
+1. **Bolt tasks are copied and executed under /tmp**
+If you can't execute scripts under that dir, you can pass ```--tmpdir /your/dir`` flag on your bolt command. 
 
-2. `yum::security`, `yum::cve` and `yum::advisory` tasks will only work if you have the relevant security metadata repos enabled. To the best of my knowledge, this effectively limits this task to RHEL and OEL boxes. It will *look* like it works on centos etc (i.e. executes successfully) but it will never "find" any security updates if the corresponding repo isn't there.
+2. **You must pass 'run as root' parameter in order for tasks to successfully complete.** You can do this by specifying ```--run-as root``` on your bolt command or by adding ```run-as: root``` to your config in your inventory.yaml file. 
+
+3. `yum::security`, `yum::cve` and `yum::advisory` tasks will only work if you have the relevant security metadata repos enabled. To the best of my knowledge, this effectively limits this task to RHEL and OEL boxes. It will *look* like it works on centos etc (i.e. executes successfully) but it will never "find" any security updates if the corresponding repo isn't there.
 
 # Usage
 

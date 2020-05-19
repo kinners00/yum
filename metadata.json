@@ -1,6 +1,6 @@
 {
   "name": "kinners00-yum",
-  "version": "0.4.7",
+  "version": "0.4.8",
   "author": "Marc McKinley",
   "summary": "Ad-hoc tasks to interact with yum to install packages, apply security patches etc",
   "license": "Apache-2.0",
@@ -28,7 +28,13 @@
     {
       "name": "bolt",
       "version_requirement": ">= 2.8.0"
+    },
+    {
+      
+      "name": "puppet",
+      "version_requirement": ">= 5.5.10 < 7.0.0"
     }
+
   ],
   "tags": [
     "yum",
@@ -43,7 +49,7 @@
     "cve",
     "advisory"
   ],
-  "pdk-version": "1.17.0",
-  "template-url": "pdk-default#1.17.0",
-  "template-ref": "tags/1.17.0-0-gd3a4319"
+  "pdk-version": "1.18.0",
+  "template-url": "pdk-default#1.18.0",
+  "template-ref": "tags/1.18.0-0-g095317c"
 }
