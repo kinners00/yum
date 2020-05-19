@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## Release 0.4.8
+## Release 0.4.9
 
 **Features**
 
