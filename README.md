@@ -47,7 +47,7 @@ bolt puppetfile install
 
 1. **Bolt tasks are copied and executed under /tmp**
 
-If you can't execute scripts under that dir, you can pass:```--tmpdir /your/dir``` flag on your bolt command. 
+    If you can't execute scripts under that dir, you can pass:```--tmpdir /your/dir``` flag on your bolt command. 
 
 2. **You must pass 'run as root' parameter in order for tasks to successfully complete.** You can do this by specifying ```--run-as root``` on your bolt command or by adding ```run-as: root``` to your config in your inventory.yaml file. 
 
