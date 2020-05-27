@@ -37,7 +37,7 @@ cd bolt/Boltdir/
 
 cat << EOF >> Puppetfile
 # Modules from the Puppet Forge.
-mod 'kinners00-yum', 	    '0.5.3'
+mod 'kinners00-yum', 	    '0.5.4'
 EOF
 
 bolt puppetfile install

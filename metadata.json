@@ -1,6 +1,6 @@
 {
   "name": "kinners00-yum",
-  "version": "0.5.3",
+  "version": "0.5.4",
   "author": "Marc McKinley",
   "summary": "Ad-hoc tasks to interact with yum to install packages, apply security patches etc",
   "license": "Apache-2.0",
@@ -19,9 +19,6 @@
     },
     {
       "operatingsystem": "CentOS"
-    },
-    {
-      "operatingsystem": "Fedora"
     }
   ],
   "requirements": [
