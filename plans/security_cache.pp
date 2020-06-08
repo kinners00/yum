@@ -1,3 +1,6 @@
+# @summary
+#  Perform cache refresh/clean and then run security update.
+
 plan yum_tasks::security_cache(
   TargetSpec $targets,
   String $cache,
