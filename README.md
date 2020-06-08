@@ -37,7 +37,7 @@ cd bolt/Boltdir/
 
 cat << EOF >> Puppetfile
 # Modules from the Puppet Forge.
-mod 'kinners00-yum_tasks', 	    '0.5.5'
+mod 'kinners00-yum_tasks', '0.5.5'
 EOF
 
 bolt puppetfile install
@@ -87,25 +87,36 @@ bolt task run --targets rhelboxes yum_tasks::security security=minimal
 
 **If you a bolt aficionado, you can ignore this section.**
 
-I've included a sample plan to demonstrate how you can chain together tasks to achieve an overall workflow. In this plan we are running the cache task followed by the security task. Plans can be made up of tasks from other modules too. 
+I've included two sample plans to demonstrate how you can chain together tasks to achieve an overall workflow. In these plans we are running the cache task followed by either a security or install package task, depending on which plan you run. Plans can be made up of tasks from other modules too. 
+
+You can see the content of `security_cache` plan below:
 
 ``` puppet
-plan yum_tasks:security_cache(
+plan yum_tasks::security_cache(
   TargetSpec $targets,
   String $cache,
   String $security
-  
+) {
+
   run_task('yum_tasks::update_cache', $targets, cache => $cache)
   run_task('yum_tasks::security', $targets, security => $security)
 
   }
+
+  }
 ```
-## Running a plan
+
+
+## Running plans
 
 (Optional) Add `--verbose` to the end of your bolt command to get output from each task in the plan.
 
 ``` shell
 bolt plan run yum_tasks::security_cache targets=rhelboxes cache=update security=minimal --verbose
+```
+
+``` shell
+bolt plan run yum_tasks::package_cache targets=rhelboxes cache=update package=nano --verbose
 ```
 
 # Contributions

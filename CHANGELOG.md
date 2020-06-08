@@ -2,13 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
-## Release 0.5.4
+## Release 0.5.5
 
 **Features**
 
-**Bugfixes**
+Changed name of module to allow for puppet-yum module to be used alongside this one. Updated documentation to reflect new name.
 
-Updated ```activesupport``` Gem to **v5.2.4.3** inline with [CVE-2020-8165](https://github.com/advisories/GHSA-2p68-f74v-9wc6).
+Added an additional sample plan to interact with cache before installing a package. 
+
+**Bugfixes**
 
 **Known Issues**
 

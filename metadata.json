@@ -1,12 +1,12 @@
 {
-  "name": "kinners00-yum",
-  "version": "0.5.4",
+  "name": "kinners00-yum_tasks",
+  "version": "0.5.5",
   "author": "Marc McKinley",
   "summary": "Ad-hoc tasks to interact with yum to install packages, apply security patches etc",
   "license": "Apache-2.0",
-  "source": "https://github.com/kinners00/yum",
-  "project_page": "https://github.com/kinners00/yum",
-  "issues_url": "https://github.com/kinners00/yum/issues",
+  "source": "https://github.com/kinners00/yum_tasks",
+  "project_page": "https://github.com/kinners00/yum_tasks",
+  "issues_url": "https://github.com/kinners00/yum_tasks/issues",
   "dependencies": [
 
   ],
