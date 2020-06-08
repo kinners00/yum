@@ -37,7 +37,7 @@ cd bolt/Boltdir/
 
 cat << EOF >> Puppetfile
 # Modules from the Puppet Forge.
-mod 'kinners00-yum', 	    '0.5.4'
+mod 'kinners00-yum_tasks', 	    '0.5.5'
 EOF
 
 bolt puppetfile install
@@ -49,13 +49,13 @@ bolt puppetfile install
 
 If you can't execute scripts under that directory, you can pass ```--tmpdir``` flag on your bolt command followed by your chosen directory for example ```--tmpdir /var/tmp```
 
-### You must pass 'run as root' parameter in order for tasks to successfully complete
+### Pass 'run as root' parameter 
 
-You can do this by specifying ```--run-as root``` on your bolt command or by adding ```run-as: root``` to your config in your inventory.yaml file. 
+Depending on your targets user level permissions, you may have to pass ```--run-as root``` on your bolt command or add ```run-as: root``` to your config in your `inventory.yaml` file. 
 
 ### Security related tasks only work on RHEL + OEL 
 
-`yum::security`, `yum::cve` and `yum::advisory` tasks will only work if you have the relevant security metadata repos enabled. 
+`yum_tasks::security`, `yum_tasks::cve` and `yum_tasks::advisory` tasks will only work if you have the relevant security metadata repos enabled. 
 
 To the best of my knowledge, this effectively limits this task to RHEL and OEL boxes. It will *look* like it works on centos etc (i.e. executes successfully) but it will never "find" any security updates if the corresponding repo isn't there.
 
@@ -63,10 +63,10 @@ To the best of my knowledge, this effectively limits this task to RHEL and OEL b
 
 ## Show all available yum tasks
 
-Will show all tasks that match the module name `yum`.  
+Will show all tasks that match the module name `yum_tasks`.  
 
 ``` shell
-bolt task show --filter yum
+bolt task show --filter yum_tasks
 ```
 
 ## Show task info/metadata
@@ -74,14 +74,14 @@ bolt task show --filter yum
 This will show a brief description of the tasks function as well the parameters that the task can consume.
 
 ``` shell
-bolt task show yum::security
+bolt task show yum_tasks::security
 ```
 ## Running a task
 
 Pass in the relevant parameters and run the task.
 
 ``` shell
-bolt task run --targets rhelboxes yum::security security=minimal
+bolt task run --targets rhelboxes yum_tasks::security security=minimal
 ```
 ## Plan example
 
@@ -90,12 +90,12 @@ bolt task run --targets rhelboxes yum::security security=minimal
 I've included a sample plan to demonstrate how you can chain together tasks to achieve an overall workflow. In this plan we are running the cache task followed by the security task. Plans can be made up of tasks from other modules too. 
 
 ``` puppet
-plan yum::security_cache(
+plan yum_tasks:security_cache(
   TargetSpec $targets,
   String $cache,
-  String $securitymarcmupdate 
-  run_task('yum::update_cache', $targets, cache => $cache)
-  run_task('yum::security', $targets, security => $security)
+  String $security
+  run_task('yum_tasks::update_cache', $targets, cache => $cache)
+  run_task('yum_tasks::security', $targets, security => $security)
 
   }
 ```
@@ -104,7 +104,7 @@ plan yum::security_cache(
 (Optional) Add `--verbose` to the end of your bolt command to get output from each task in the plan.
 
 ``` shell
-bolt plan run yum::security_cache targets=rhelboxes cache=update security=minimal --verbose
+bolt plan run yum_tasks::security_cache targets=rhelboxes cache=update security=minimal --verbose
 ```
 
 # Contributions
@@ -115,6 +115,6 @@ If anyone would like to contribute to the module, that would be awesome and very
 
 If you're experiencing any bugs, please raise an issue below:
 
-Repo:        https://github.com/kinners00/yum/issues
+Repo:        https://github.com/kinners00/yum_tasks/issues
 
-Issues link: https://github.com/kinners00/yum/issues
+Issues link: https://github.com/kinners00/yum_tasks/issues
