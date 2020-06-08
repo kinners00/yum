@@ -103,7 +103,6 @@ plan yum_tasks::security_cache(
 
   }
 
-  }
 ```
 
 
