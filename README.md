@@ -7,7 +7,7 @@
     * [Newcomers quickstart](#newcomers-quickstart)
 3. [Gotchas/Limitations](#gotchas)
 4. [Usage - Examples and general tips on how to use the content in this module](#usage)
-5. [# Contributions - Guide for contributing to the module](#contributions)
+5. [Contributions - Guide for contributing to the module](#contributions)
 
 # Description
 
@@ -37,7 +37,7 @@ cd bolt/Boltdir/
 
 cat << EOF >> Puppetfile
 # Modules from the Puppet Forge.
-mod 'kinners00-yum_tasks', '0.6.0'
+mod 'kinners00-yum_tasks', '0.6.1'
 EOF
 
 bolt puppetfile install

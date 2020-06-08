@@ -1,6 +1,6 @@
 {
   "name": "kinners00-yum_tasks",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "author": "Marc McKinley",
   "summary": "Ad-hoc tasks to interact with yum to install packages, apply security patches etc",
   "license": "Apache-2.0",
