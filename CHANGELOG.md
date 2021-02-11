@@ -2,13 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
-## Release 1.0.0
+## Release 1.0.1
 
 **Features**
 
 
 **Bugfixes**
+Upgraded json to 2.3.0 - CVE-2020-10663
 
 **Known Issues**
-
-
