@@ -197,7 +197,7 @@ bolt task run yum_tasks::update_cache -t <targets> cache=clean
 bolt task run yum_tasks::update_cache -t <targets> cache=update
 ```
 
-## Plans
+# Plans
 
 ## security_cache
 
