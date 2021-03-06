@@ -3,7 +3,7 @@
   "input_method": "environment",
   "parameters": {
     "security": {
-      "description": "Minimal or full/regular security update",
+      "description": "Minimal or full security update",
       "type": "Enum[minimal, full]"
     }
   }
