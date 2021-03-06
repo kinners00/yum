@@ -35,18 +35,18 @@ If you've never used bolt before, the easiest way to get started is with a bolt 
 2. Download/clone repo above
 2. Populate your own target inventory information in the ```inventory.yaml``` file (make sure and remove what you don't need and delete #s)
 3. Navigate to the ```bolt_sandbox``` directory in your shell
-4. Install this module in your project by running ```bolt module add kinners00-nessus_agent```
+4. Install this module in your project by running ```bolt module add kinners00-yum_tasks```
 5. Run ```bolt task show``` and ```bolt plan show``` to find out what tasks and plans are available within this module
-6. Running ```bolt <automation_type> show <myautomationitem>``` will give you more detailed info on how to use a given task or plan including required and optional parameters. Try it out by running ```bolt task show nessus_agent::link``` within the bolt_sandbox directory/project. As projects are self contained, this command will only work when your current working directory is the ```bolt_sandbox``` directory (```bolt_sandbox-master``` if downloaded). 
+6. Running ```bolt <automation_type> show <myautomationitem>``` will give you more detailed info on how to use a given task or plan including required and optional parameters. Try it out by running ```bolt task show yum_tasks::advisory``` within the bolt_sandbox directory/project. As projects are self contained, this command will only work when your current working directory is the ```bolt_sandbox``` directory (```bolt_sandbox-master``` if downloaded). 
 
 Cloned:
 ```
-~/code/bolt_sandbox > bolt task show nessus_agent::link
+~/code/bolt_sandbox > bolt task show yum_tasks::advisory
 ```
 
 Downloaded:
 ```
-~/code/bolt_sandbox-master > bolt task show nessus_agent::link
+~/code/bolt_sandbox-master > bolt task show yum_tasks::advisory
 ```
 
 Ps. There's some learning/sample tasks and a plan included in the ```bolt_sandbox``` that'll help you get started with building your own tasks and plans. You can start by creating tasks and plans in their relevant directories within the ```bolt_sandbox```!
