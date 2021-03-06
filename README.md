@@ -103,14 +103,6 @@ Will show all tasks that match the module name `yum_tasks`.
 bolt task show --filter yum_tasks
 ```
 
-## Show task info/metadata
-
-This will show a brief description of the tasks function as well the parameters that the task can consume.
-
-```
-bolt task show yum_tasks::security
-```
-
 ## Tasks
 
 ## advisory
