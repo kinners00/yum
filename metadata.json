@@ -2,7 +2,7 @@
   "name": "kinners00-yum_tasks",
   "version": "1.1.0",
   "author": "Marc McKinley",
-  "summary": "Ad-hoc tasks to interact with yum to install packages, apply security patches etc",
+  "summary": "Tasks enabling remediation of vulnerabilities as well as installation, updating and removal of packages via yum",
   "license": "Apache-2.0",
   "source": "https://github.com/kinners00/yum_tasks",
   "project_page": "https://github.com/kinners00/yum_tasks",
