@@ -123,8 +123,8 @@ bolt task run yum_tasks::advisory -t <targets> advisory="RHSA-2020:5009"
 
 ```yum_tasks::cve```
 
-Requires root permissions - see [Escalating privilege](#Escalating-privilege)\
-Requires security metadata - see [Security related tasks](#Security-related-tasks)
+> Requires root permissions - see [Escalating privilege](#Escalating-privilege)
+> Requires security metadata - see [Security related tasks](#Security-related-tasks)
 
 
 ```
