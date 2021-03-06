@@ -46,7 +46,7 @@ Cloned:
 
 Downloaded:
 ```
-~/code/bolt_sandbox-master > bolt task show nessus_agent::link`
+~/code/bolt_sandbox-master > bolt task show nessus_agent::link
 ```
 
 Ps. There's some learning/sample tasks and a plan included in the ```bolt_sandbox``` that'll help you get started with building your own tasks and plans. You can start by creating tasks and plans in their relevant directories within the ```bolt_sandbox```!
@@ -117,7 +117,7 @@ bolt task show yum_tasks::security
 
 ```yum_tasks::advisory```
 
-Requires root permissions - see [Escalating privilege](#Escalating-privilege)
+Requires root permissions - see [Escalating privilege](#Escalating-privilege)\
 Requires security metadata - see [Security related tasks](#Security-related-tasks)
 
 
@@ -129,7 +129,7 @@ bolt task run yum_tasks::advisory -t <targets> advisory="RHSA-2020:5009"
 
 ```yum_tasks::cve```
 
-Requires root permissions - see [Escalating privilege](#Escalating-privilege)
+Requires root permissions - see [Escalating privilege](#Escalating-privilege)\
 Requires security metadata - see [Security related tasks](#Security-related-tasks)
 
 
@@ -141,7 +141,7 @@ bolt task run yum_tasks::cve -t <targets> cve="CVE-2019-20907"
 
 ```yum_tasks::security```
 
-Requires root permissions - see [Escalating privilege](#Escalating-privilege)
+Requires root permissions - see [Escalating privilege](#Escalating-privilege)\
 Requires security metadata - see [Security related tasks](#Security-related-tasks)
 
 **minimal**
@@ -211,7 +211,7 @@ bolt task run yum_tasks::update_cache -t <targets> cache=update
 
 ```yum_tasks::security_cache```
 
-Requires root permissions - see [Escalating privilege](#Escalating-privilege)
+Requires root permissions - see [Escalating privilege](#Escalating-privilege)\
 Requires security metadata - see [Security related tasks](#Security-related-tasks)
 
 ```
