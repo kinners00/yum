@@ -76,7 +76,7 @@ Depending on your targets user level permissions, you may have to pass ```--run-
 **Bolt Command**
 
 ```
-bolt task run yum_tasks::advisory -t rhel advisory="RHSA-2020:5009" --user=rheluser --password='myregularpassword' --run-as=root --sudo-password='mysudopassword"
+bolt task run yum_tasks::advisory -t rhel advisory="RHSA-2020:5009" --user=rheluser --password='myregularpassword' --run-as=root --sudo-password='mysudopassword'
 ```
 
 **inventory.yaml**

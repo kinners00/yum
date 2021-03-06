@@ -11,6 +11,7 @@ Docs:
 - Changed quickstart section to better enable folks to more easily get started with bolt + this module
 - Updated info around elevating privilege and included examples
 - Added usage info for each task and plan including warnings around elevating privilege and security metadata
+- Fix example command password parameter
 
 **Bugfixes**
 
