@@ -111,7 +111,7 @@ bolt task show --filter yum_tasks
 
 ```yum_tasks::advisory```
 
-Requires root permissions - see [Escalating privilege](#Escalating-privilege)\
+Requires root permissions - see [Escalating privilege](#Escalating-privilege)  
 Requires security metadata - see [Security related tasks](#Security-related-tasks)
 
 
@@ -123,7 +123,7 @@ bolt task run yum_tasks::advisory -t <targets> advisory="RHSA-2020:5009"
 
 ```yum_tasks::cve```
 
-Requires root permissions - see [Escalating privilege](#Escalating-privilege) 
+Requires root permissions - see [Escalating privilege](#Escalating-privilege)  
 Requires security metadata - see [Security related tasks](#Security-related-tasks)
 
 
@@ -135,7 +135,7 @@ bolt task run yum_tasks::cve -t <targets> cve="CVE-2019-20907"
 
 ```yum_tasks::security```
 
-Requires root permissions - see [Escalating privilege](#Escalating-privilege)\
+Requires root permissions - see [Escalating privilege](#Escalating-privilege)  
 Requires security metadata - see [Security related tasks](#Security-related-tasks)
 
 **minimal**
@@ -205,7 +205,7 @@ bolt task run yum_tasks::update_cache -t <targets> cache=update
 
 ```yum_tasks::security_cache```
 
-Requires root permissions - see [Escalating privilege](#Escalating-privilege)\
+Requires root permissions - see [Escalating privilege](#Escalating-privilege)  
 Requires security metadata - see [Security related tasks](#Security-related-tasks)
 
 ```

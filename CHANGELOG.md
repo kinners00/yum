@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## Release 1.1.0
+## Release 1.1.1
 
 **Features**
 
@@ -16,8 +16,8 @@ Docs:
 
 Functionality:
 
-```yum_tasks::security_cache``` security + cache params now matches task equivilant - Was string now enum\
-```yum_tasks::security_cache``` cache param now matches task equivilant - Was string now enum\
+```yum_tasks::security_cache``` security + cache params now matches task equivilant - Was string now enum  
+```yum_tasks::security_cache``` cache param now matches task equivilant - Was string now enum  
 ```yum_tasks::security``` small edit in task metadata params
 
 **Known Issues**

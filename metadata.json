@@ -1,6 +1,6 @@
 {
   "name": "kinners00-yum_tasks",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "author": "Marc McKinley",
   "summary": "Tasks enabling remediation of vulnerabilities as well as installation, updating and removal of packages via yum",
   "license": "Apache-2.0",
