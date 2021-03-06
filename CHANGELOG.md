@@ -15,6 +15,7 @@ Docs:
 **Bugfixes**
 
 Functionality:\
+
 ```yum_tasks::security_cache``` security + cache params now matches task equivilant - Was string now enum\
 ```yum_tasks::security_cache``` cache param now matches task equivilant - Was string now enum\
 ```yum_tasks::security``` small edit in task metadata params\
