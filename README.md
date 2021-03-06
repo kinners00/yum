@@ -103,7 +103,7 @@ Will show all tasks that match the module name `yum_tasks`.
 bolt task show --filter yum_tasks
 ```
 
-## Tasks
+# Tasks
 
 ## advisory
 
