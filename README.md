@@ -69,7 +69,7 @@ To the best of my knowledge, this effectively limits this task to RHEL and OEL b
 
 ### Escalating privilege
 
-Depending on your targets user level permissions, you may have to pass ```--run-as=root``` and ```--sudo-password='mypassword'``` or ```--sudo-password-prompt```  on your bolt command. You can also add ```run-as: root``` and ```sudo-password: 'mypass'``` to your config in your `inventory.yaml` file to enable you keep your bolt command shorter/neater. 
+Depending on your targets user level permissions, you may have to pass ```--run-as=root``` and ```--sudo-password='mysudopassword'``` or ```--sudo-password-prompt``` flags on your bolt command. You can also add ```run-as: root``` and ```sudo-password: 'mysudopassword'``` to your config in your `inventory.yaml` file to enable you to keep your bolt command shorter/neater. 
 
 ## Example
 

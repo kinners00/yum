@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## Release 1.1.2
+## Release 1.1.3
 
 **Features**
 
@@ -12,6 +12,7 @@ Docs:
 - Updated info around elevating privilege and included examples
 - Added usage info for each task and plan including warnings around elevating privilege and security metadata
 - Fix example command password parameter
+- Fixed grammer under elevating privilege section
 
 **Bugfixes**
 
