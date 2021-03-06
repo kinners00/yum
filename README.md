@@ -37,7 +37,9 @@ If you've never used bolt before, the easiest way to get started is with a bolt 
 3. Navigate to the ```bolt_sandbox``` directory in your shell
 4. Install this module in your project by running ```bolt module add kinners00-yum_tasks```
 5. Run ```bolt task show``` and ```bolt plan show``` to find out what tasks and plans are available within this module
-6. Running ```bolt <automation_type> show <myautomationitem>``` will give you more detailed info on how to use a given task or plan including required and optional parameters. Try it out by running ```bolt task show yum_tasks::advisory``` within the bolt_sandbox directory/project. As projects are self contained, this command will only work when your current working directory is the ```bolt_sandbox``` directory (```bolt_sandbox-master``` if downloaded). 
+6. Running ```bolt <automation_type> show <myautomationitem>``` will give you more detailed info on how to use a given task or plan including required and optional parameters. Try it out by running ```bolt task show yum_tasks::advisory``` within the ```bolt_sandbox``` directory/project. 
+
+As projects are self contained, this command will only work when your current working directory is the ```bolt_sandbox``` directory (if cloned) or ```bolt_sandbox-master``` (if downloaded). 
 
 Cloned:
 ```
